@@ -1,4 +1,4 @@
-# 🎮 Mini-Jeux en Python avec Tkinter
+# 🎮 Mini-jeux en Python avec Tkinter
 
 Ce projet a pour objectif de réaliser une interface regroupant plusieurs mini-jeux développés en Python, en utilisant la bibliothèque Tkinter pour l’interface graphique.
 
