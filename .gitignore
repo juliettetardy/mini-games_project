@@ -1,0 +1,16 @@
+# Dossiers d'environnement
+.venv/
+pacman/.venv/
+
+# Dossiers cache
+__pycache__/
+jeu_de_la_vie/__pycache__
+jeu_du_pendu/__pycache__
+mastermind/__pycache__
+pacman/__pycache__
+space_invaders/__pycache__
+
+# Fichiers de tests
+test.py
+test2.py
+test3.py
