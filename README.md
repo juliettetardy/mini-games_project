@@ -5,10 +5,10 @@ Ce projet a pour objectif de réaliser une interface regroupant plusieurs mini-j
 🚧 Statut : Projet en cours de développement 🚧
 
 ## 🕹️ Jeux prévus
-- ✅ Space Invaders
-- ✅ Jeu de la vie
-- ⏳ Jeu du pendu (en cours)
-- ⏳ Mastermind (en cours)
+- Space Invaders ✅
+- Jeu de la vie ✅
+- Jeu du pendu (en cours ⏳)
+- Mastermind (en cours ⏳)
 
 ## 📌 Objectifs du projet
 - Créer une interface unique permettant de lancer plusieurs mini-jeux.
