@@ -1,6 +1,9 @@
 # Importation des fichiers et/ou bibliothèque(s) nécessaire(s) au fonctionnement du jeu
 import random
 
+class MastermindLogic :
+    pass
+
 def new_code() :
     """ Fonction qui retourne le code à 6 chiffres à trouver
         Entrée(s): None
@@ -26,7 +29,7 @@ def ask_code() :
                     valid[i] = True
     return code
 
-def game () :
+def game() :
     """ Fonction qui fait fonctionner le jeu Mastermind
         Entrée(s): None
         Sortie(s): None
@@ -64,4 +67,4 @@ def game () :
         elif 8 - test < 8 :
             print("Il vous reste", 8 - test, "essais")
 
-game()
+#game()

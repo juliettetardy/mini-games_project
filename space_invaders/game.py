@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 from space_invaders import invaders, ship, boss, islet
 import subprocess
 
-class Game :
+class SpaceInvadersGame :
     """
     Une classe qui permet de jouer au jeu "Space Invaders _ Ju^2 Version".
     Cette classe s'occupe de tous les éléments graphiques à afficher et de comment les afficher.
@@ -13,7 +13,7 @@ class Game :
     ---------
         start_game :
             Fonction qui démarre le jeu lorsque l'on est sur l'écran d"accueil.
-        get_window :
+        get_si_window :
             Fonction qui affiche la fenêtre du menu d'accueil.
         new_game :
             Fonction qui permet de jouer une nouvelle partie.
@@ -38,9 +38,9 @@ class Game :
 
         """
         # Création de la fenêtre et de son nom
-        self.window = Tk()
-        self.window.title ('Space Invaders Ju2 version')
-        self.window.geometry (f"+{-8}+0")
+        self.si_window = Tk()
+        self.si_window.title ('Space Invaders')
+        self.si_window.geometry (f"+{-8}+0")
 
         # Initialisation dimensions des canevas 
         self.width_canvas = 1530
@@ -50,7 +50,7 @@ class Game :
         self.height_canvas_welc = 1000
     
         # Création de la frame "écran d'accueil"
-        self.welcome_frame = Frame (self.window)
+        self.welcome_frame = Frame (self.si_window)
         self.Canevas_welc = Canvas (self.welcome_frame, width = self.width_canvas_welc, height = self.height_canvas_welc, bg = 'gray')
 
         # Ajout d'un bouton pour démarrer le jeu
@@ -76,7 +76,7 @@ class Game :
 
         ## ----- Premier niveau du jeu -----
         # Création de la frame du premier niveau
-        self.frame_lvl1 = Frame (self.window)
+        self.frame_lvl1 = Frame (self.si_window)
         self.Canevas_lvl1 = Canvas (self.frame_lvl1, width = self.width_canvas, height = self.height_canvas, bg = 'gray')
 
         # Affichage de la frame du premier niveau
@@ -105,7 +105,7 @@ class Game :
 
         ## ----- Niveau boss du jeu -----
         # Création de la frame du niveau boss
-        self.frame_lvlboss = Frame (self.window)
+        self.frame_lvlboss = Frame (self.si_window)
         self.Canevas_lvlboss = Canvas (self.frame_lvlboss, width = self.width_canvas, height = self.height_canvas, bg = 'gray')
 
         # Affichage de la frame du niveau boss
@@ -171,20 +171,20 @@ class Game :
         # Création et mise en route d'une partie
         self.new_game()
    
-    def get_window (self) :
+    def get_si_window (self) :
         """
         Fonction qui affiche la fenêtre du menu d'accueil
         Entrée(s): None
         Sortie(s): 
-            window : fenêtre du menu d'accueil
-                     type = window
+            si_window : fenêtre du menu d'accueil
+                        type = si_window
 
         """
         # Masquage du score et des vies qui sont inutiles ici
         self.hide_score_and_life()
 
         # Affichage de la fenêtre du menu d'accueil
-        return self.window
+        return self.si_window
 
     def new_game (self) :
         """
@@ -404,16 +404,5 @@ class Game :
         Sortie(s): None
 
         """
-        self.window.destroy()
+        self.si_window.destroy()
         subprocess.run (["python", "main.py"])
-
-
-    
-
-
-
-        
-
-        
-
-

@@ -4,10 +4,10 @@ Jeu de la vie avec génération aléatoire, créé par NewNova88
 Ce jeu de la vie est aléatoire (on ne place pas les cellules à la souris).
 
 Néanmoins, afin de ne pas etre limité par le cadre, j'utilise ici
-un tableau torique. Cela permet par exemple qu'une structure mouvante partant vers l'extreme
-droite se retrouvera à gauche pour continuer son mouvement (idéal pour étudier les planeurs)
+un tableau torique. Cela permet par exemple qu'une structure mouvante partant vers l'extrême
+droite se retrouvera à gauche pour continuer son mouvement (idéal pour étudier les planeurs).
 
-On a donc les entrées de la hauteur et de la largeur au début 
+On a donc les entrées de la hauteur et de la largeur au début.
 
 Une fois les valeurs entrées, on a donc l'interface qui montre la table avec les cellules mortes et vivantes évoluant dans l'environnement.
 On pourra avoir plusieurs résultats comme des structures stables (un carré de 2x2 cellules) ou instables (comme le clignotant ou le planeur,

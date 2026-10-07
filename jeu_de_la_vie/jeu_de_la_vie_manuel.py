@@ -10,6 +10,7 @@ from tkinter.filedialog import askopenfile # ne fonctionne que pour python3
 
 class Grille:
     def __init__(self):
+        self.debut = 0
         self.L_H_cellule = 15             # Largeur/hauteur d'une cellule par défaut
         self.L_H_grille = 0               # Largeur/hauteur de la grille (en fonction de la taille de l'écran)
         self.H_appli_diff = 44            # En pixels = hauteur écran - hauteur de la grille
